@@ -18,3 +18,18 @@
 .header nav a:hover{
     background-color: lightgray;
 }
+.login-heder{
+    background-color: rgb(61, 66, 14);
+}
+.login-heder a{
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+}
+.button-Logout{
+    background-color: rgb(109, 121, 2);
+    border:  rgb(187, 187, 187);
+    color: white;
+}
+.button-Logout:hover{
+    background-color: rgb(143, 156, 22);
+}

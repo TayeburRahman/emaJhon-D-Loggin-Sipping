@@ -1,0 +1,17 @@
+.shipping-from{
+    margin: 30px 100px;
+}
+.shipping-from input{
+    display: block;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 300px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.error{
+    color: red;
+}

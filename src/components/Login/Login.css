@@ -1,0 +1,12 @@
+.login-from{
+    background-color: rgb(204, 203, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.login{
+    display: flex;
+    ;
+    justify-content: center
+}
