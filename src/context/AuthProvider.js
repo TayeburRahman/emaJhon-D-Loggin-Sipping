@@ -2,9 +2,11 @@ import React from "react";
 import { createContext } from "react";
 import useFirebase from "../hooks/useFirebase";
 
+//   contex provider Stp.3.1
 export const AuthContext = createContext();
-
+//   contex provider Stp.3
 const AuthProvider = (props) => {
+  //   contex provider Stp.3.4 end
     const allContext = useFirebase();
   const { children } = props;
   return (
@@ -15,6 +17,9 @@ const AuthProvider = (props) => {
 };
 
 export default AuthProvider;
+  // AuthProvider contex set route-prantesh (app.js) Stp.3.5 end
+
+
 
 /*
 1.create a auth provider

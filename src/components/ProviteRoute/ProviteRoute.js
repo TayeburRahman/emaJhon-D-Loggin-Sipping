@@ -2,7 +2,10 @@ import React from "react";
 import { Redirect, Route } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
+
+// ProviteRoute compo default Login 5
 const ProviteRoute = ({ children, ...rest }) => {
+  // default Login(use firebass data) 5.1
   const { user } = useAuth();
   return (
     <Route
@@ -13,6 +16,7 @@ const ProviteRoute = ({ children, ...rest }) => {
         ) : (
           <Redirect
             to={{
+              // default Login'user not login for slid page, set route' 5.2
               pathname: "/login",
               state: { from: location },
             }}
@@ -24,6 +28,7 @@ const ProviteRoute = ({ children, ...rest }) => {
 };
 
 export default ProviteRoute;
+// ProviteRoute compo default Login (set app.js ProviteRoute) 5.3 end
 
 /*
 

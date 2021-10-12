@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
- 
-
 import logo from "../../images/logo.png";
 import "./Header.css";
 
 const Header = () => {
+  // usAuth hooks use stp.4.1 end (other )
   const { user, logOut } = useAuth();
   return (
     <div className="header">
@@ -22,6 +21,7 @@ const Header = () => {
         <div className="col-3 p-2">
         {/* <p>{user.displayName}</p> */}
           {user.email ? (
+            // Log-Out STP.6.1 end
             <button onClick={logOut} className="button-Logout rounded">
               Log Out
             </button>
